@@ -12,10 +12,10 @@
     <p>
     <script>
       var grades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"];
-      
-      var firstRandomElement = grades.shuffle(randomArray)[0];
-      
-      document.write(firstRandomElement)
+
+      var firstRandomElement = grades[Math.floor(Math.random()*grades.length)];
+
+      document.write(firstRandomElement);
     </script>
     </p>
   </div>
