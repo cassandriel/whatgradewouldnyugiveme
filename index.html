@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>What Grade Would NYU Give Me?</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <script>
+    var grades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"];
+
+    var firstRandomElement = grades[Math.floor(Math.random()*grades.length)];
+
+    year = new Date().getFullYear();
+  </script>
+
+  <style>
+    body {
+      background-color: #7b2cbf;
+    }
+
+    main {
+      background-color: #fff;
+    }
+
+    #gradetitle {
+      padding: 20px;
+    }
+
+    #grade {
+      text-align: center;
+      font-size: 10em;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #3c096c;
+      color: #e0aaff;
+      text-align: center;
+      padding: 25px;
+    }
+
+    footer a {
+      color: #e0aaff;
+    }
+
+    footer a:hover {
+      color: #c77dff;
+      background-color: #10002b;
+    }
+  </style>
+</head>
+<body>
+  <main class="position-absolute top-50 start-50 translate-middle rounded">
+    <div class="card">
+      <h6 class="card-header display-6" id="gradetitle">What grade would NYU give you?</h6>
+
+      <div class="card-body">
+        <p id="grade">
+          <script>
+            document.write(firstRandomElement);
+          </script>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="position-absolute bottom-0 start-50 translate-middle-x" id="bottom">
+    <div class="container">
+      <sm>
+        &#169;
+        <script>
+          document.write(year);
+        </script>
+        <span class="text-muted"><a href="https://www.siferaseph.com">Sifer Aseph</a></span>
+      </sm>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
